@@ -1,0 +1,32 @@
+{
+  "name": "youtube-music-desktop",
+  "version": "0.1.0",
+  "description": "Desktop client for YouTube Music",
+  "main": "app.js",
+  "scripts": {
+    "start": "electron .",
+    "package-win": "electron-packager . --asar --overwrite --asar=true --platform=win32 --arch=x64 --icon=icon.ico --prune=true --out=release-builds --version-string.CompanyName='Noodles' --version-string.FileDescription='Desktop client for YouTube Music' --version-string.ProductName=\"YouTube Music\"",
+    "create-installer-win": "node installers/windows/create_installer.js"
+  },
+  "keywords": [
+    "YouTube",
+    "YouTube",
+    "Music",
+    "Music",
+    "Desktop",
+    "YouTube",
+    "Music",
+    "Desktop"
+  ],
+  "author": "Noodles",
+  "license": "GPL-3.0-or-later",
+  "devDependencies": {
+    "asar": "^2.0.1",
+    "electron": "^6.0.0",
+    "electron-packager": "^14.0.4"
+  },
+  "dependencies": {
+    "electron-squirrel-startup": "^1.0.0",
+    "fs": "0.0.1-security"
+  }
+}
