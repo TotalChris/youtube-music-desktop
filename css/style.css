@@ -1,17 +1,21 @@
-ytmusic-nav-bar { 
-  -webkit-app-region: drag 
-} 
+ytmusic-nav-bar {
+  -webkit-app-region: drag
+}
 
-ytmusic-pivot-bar-item-renderer { 
-  -webkit-app-region: no-drag 
+.sign-in-link {
+  -webkit-app-region: no-drag
+}
+
+ytmusic-pivot-bar-item-renderer {
+  -webkit-app-region: no-drag
 }
 
 .ytmusic-search-box {
-  -webkit-app-region: no-drag 
+  -webkit-app-region: no-drag
 }
 
 iron-icon {
-  -webkit-app-region: no-drag 
+  -webkit-app-region: no-drag
 }
 
 #right-content {
