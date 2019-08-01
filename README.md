@@ -8,5 +8,8 @@ Currently only available for [Windows](https://github.com/alex-lushiku/youtube-m
 
 ![Screenshot](./res/screenshot.jpg)
 
+## Installation
+If you run into any installation problems, try turning off your anti-virus.
+
 ## License
 [GNU GPLv3](LICENSE)
