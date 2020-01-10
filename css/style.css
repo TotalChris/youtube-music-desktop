@@ -1,5 +1,46 @@
 ytmusic-nav-bar {
-  -webkit-app-region: drag
+  -webkit-app-region: drag;
+  padding: 0 !important;
+}
+
+ytmusic-search-box{
+  border-radius: 16px !important;
+  display: flex !important;
+}
+
+paper-icon-button.ytmusic-settings-button{
+  margin: 19px;
+}
+
+ytmusic-settings-button{
+  margin: 0 !important;
+}
+
+ytmusic-settings-button:hover { background:rgba(53, 53, 53, .5) }
+
+ytmusic-search-box[opened], ytmusic-search-box[has-query]{
+  border: none;
+  left: 8px !important;
+  width: calc(100% - 274px) !important;
+}
+
+ytmusic-search-box[has-query] .search-container.ytmusic-search-box, ytmusic-search-box[opened] .search-container.ytmusic-search-box{
+  width: 100% !important;
+}
+
+.left-content.ytmusic-nav-bar{
+  margin: 16px !important;
+}
+
+.center-content.ytmusic-nav-bar {
+  position: initial !important;
+  display: flex !important;
+  justify-content: inherit !important;
+  width: auto !important;
+}
+
+input.ytmusic-search-box{
+  width: -webkit-fill-available !important;
 }
 
 .sign-in-link {
@@ -20,16 +61,15 @@ iron-icon {
 
 #right-content {
   position: relative;
-  right: 150px;
+  right: 0px;
 }
 
 #window-buttons {
-  background: #151515;
-  width: 140px;
-  height: 30px;
+  background: transparent;
+  width: calc(var(--ytmusic-nav-bar-height) * 3);
+  height: var(--ytmusic-nav-bar-height);
   -webkit-app-region: no-drag;
   user-select: none;
-  position: fixed;
   top: 0; right: 0;
   display: grid;
   font-size: 10px;
@@ -49,10 +89,11 @@ iron-icon {
 }
 
 #min-button { grid-column: 1 }
-#min-button:hover { background: #353535 }
+#min-button:hover { background:rgba(53, 53, 53, .5) }
 
 #max-button, #restore-button { grid-column: 2 }
-#max-button:hover, #restore-button:hover { background: #353535 }
+#max-button:hover, #restore-button:hover { background: rgba(53, 53, 53, .5) }
 
 #close-button { grid-column: 3 }
-#close-button:hover { background: #E81123 }
+#close-button:hover { background: rgba(232, 17, 35, .5) }
+

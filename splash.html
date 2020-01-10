@@ -7,14 +7,25 @@
       body {
         background:#151515;
         display: flex;
+        margin-top: 100%;
         align-items: center;    
         align-content: center;   
         justify-content: center; 
         -webkit-app-region: drag;
+        animation-name: zoom;
+        animation-duration: 3s;
+        animation-direction: alternate;
+      }
+
+      @keyframes zoom {
+        0%{ margin-top: 100%; }
+        50%{ margin-top: 0%; }
+        100%{ margin-top: -100%; }
       }
 
       img {
         max-width: 40%;
+        position: relative;
       }
     </style>
   </head>

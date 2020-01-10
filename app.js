@@ -9,19 +9,20 @@ function createWindow() {
     width: 1280,
     height: 960,
     icon: __dirname + '/res/logo.png',
-    minWidth: 640,
+    minWidth: 710,
     minHeight: 480,
     darkTheme: true,
     frame: false,
     webPreferences: {
       nodeIntegration: true
-    }
+    },
+    backgroundColor: '#151515'
   })
 
   window.loadFile('splash.html').then(() => {
     setTimeout(()=>{
       window.loadURL('https://music.youtube.com/')
-    }, 1000)
+    }, 3000)
   });
 
   window.webContents.on('did-finish-load', () => {
